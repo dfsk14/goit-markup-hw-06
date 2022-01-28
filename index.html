@@ -97,23 +97,13 @@
             class="form-coment"
             placeholder="Введите текст"
           ></textarea>
-          <div class="form-agree">
-            <input
-              type="checkbox"
-              name="input-check"
-              id="input-check"
-              class="policy-check visually-hidden"
-            />
-            <label for="policy" class="check-text">
-              <span>
-                <svg class="policy-icon" width="16" height="15">
-                  <use href="images/svg/sprite.svg#icon-icon-check"></use>
-                </svg>
-              </span>
-              Соглашаюсь с рассылкой и принимаю
-              <a href="" class="terms-agree">Условия договора</a>
-            </label>
-          </div>
+          <label class="modal-checkbox">
+            <svg class="checkbox-icon">
+                <use href="images/svg/sprite.svg#icon-icon-check"></use>
+            </svg>
+            <input class= "checkbox-input" type="checkbox" name="agree" value="agree">Соглашаюсь с рассылкой и принимаю <a href="#" download><u>Условия договора</u></a>
+        </label>
+        <button type="submit" class="modal-button">Отправить</button>
         </form>
       </div>
     </div>
