@@ -228,6 +228,7 @@ svg.main-link {
   transition-timing-function: var(--transition-timing-function);
 }
 .modal {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -257,7 +258,122 @@ svg.main-link {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
+.modal-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+}
+.form-lebel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding-left: 42px;
+  transition: 250ms;
+}
+.form-input:hover {
+  border-color: var(--accent-color);
+}
+.input-text:hover .input-icon {
+  fill: var(--accent-color);
+}
 
+.input-text {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 13px;
+  transition: 250ms var(--transition-timing-function);
+}
+.form-agree {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.form-coment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+}
+.form-coment:hover {
+border-color: var(--accent-color);
+}
+.check-text {
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+.check-text span {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--primary-text-color);  
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.policy-icon {
+fill: transparent;
+}
+.check-text:checked +
+
+
+
+
+
+
+
+
+
+
+.terms-agree {
+  padding-left: 5px;
+  color: var(--accent-color);
+
+}
 /* features */
 .features {
   display: flex;
