@@ -73,7 +73,7 @@
             </div>
           </div>
           <div class="form-box">
-            <label for="user-tel" class="form-lebel">Телефон</label>
+            <label class="form-lebel" >Телефон</label>
             <div class="input-text">
               <input type="tel" class="form-input" name="user-tel" id="user-tel_text" />
               <svg class="input-icon" width="18" height="18">
@@ -82,21 +82,23 @@
             </div>
           </div>
           <div class="form-box">
-            <label for="user-mail" class="form-lebel">Почта</label>
+            <label class="form-lebel">Почта</label>
             <div class="input-text">
-              <input type="mail" class="form-input" name="user-mail" id="user-mail_text;" />
+              <input type="email" class="form-input" name="user-mail" id="user-mail_text;" />
               <svg class="input-icon" width="18" height="18">
                 <use href="images/svg/sprite.svg#icon-mail-form"></use>
               </svg>
             </div>
           </div>
-          <label for="user-comment" class="form-lebel">Комментарий</label>
-          <textarea
-            name="user-comment"
-            id="user-comment"
-            class="form-coment"
-            placeholder="Введите текст"
-          ></textarea>
+          <div class="form-box">
+            <label for="user-comment" class="form-lebel">Комментарий</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="form-coment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
           <label class="modal-checkbox">
             <svg class="checkbox-icon">
               <use href="images/svg/sprite.svg#icon-icon-check"></use>
@@ -470,17 +472,18 @@
             </li>
           </ul>
         </div>
-        <form class="mail-form">
+        <div class="mail-form">
           <p class="footer-sub">Подпишитесь на рассылку</p>
-          <label for="mail"></label>
-          <input type="mail" name="mail" id="mail" placeholder="E-mail" class="mail-input" />
-          <button type="submit" class="mail-button">
-            Подписаться
-            <svg class="mail-send" width="24" height="24">
-              <use href="images/svg/sprite.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
+          <form class="sub">
+            <input type="email" name ="mail" id="mail" placeholder="Email" class="mail-input" />
+            <button type="submit" class="mail-button">
+              Подписаться
+              <svg class="mail-send" width="24" height="24">
+                <use href="images/svg/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button> 
+          </form>
+        </div>
       </div>
     </footer>
     <script src="js/modal.js"></script>
